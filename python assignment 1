@@ -1,0 +1,114 @@
+"""
+Python conditional statement exercises.
+
+Run the file and enter the requested values for each exercise in order.
+"""
+
+
+# 1. if Statement
+
+# 1.1 Positive Number
+number = float(input("1.1 Enter a number: "))
+if number > 0:
+    print("Positive Number")
+
+
+# 1.2 Voting Eligibility
+age = int(input("1.2 Enter your age: "))
+if age >= 18:
+    print("Eligible to vote")
+
+
+# 2. if-else Statement
+
+# 2.1 Even or Odd
+number = int(input("2.1 Enter an integer: "))
+if number % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+
+# 2.2 Pass or Fail
+marks = float(input("2.2 Enter the student's marks: "))
+if marks >= 35:
+    print("Pass")
+else:
+    print("Fail")
+
+
+# 3. if-elif-else Statement
+
+# 3.1 Grade Calculator
+marks = float(input("3.1 Enter marks from 0 to 100: "))
+if not 0 <= marks <= 100:
+    print("Invalid marks")
+elif marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 50:
+    print("Grade C")
+elif marks >= 35:
+    print("Grade D")
+else:
+    print("Fail")
+
+
+# 3.2 Number Classification
+number = float(input("3.2 Enter a number: "))
+if number > 0:
+    print("Positive")
+elif number < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+
+# 4. Nested if Statement
+
+# 4.1 Login System
+# Change these example credentials as needed.
+correct_username = "admin"
+correct_password = "1234"
+username = input("4.1 Enter your username: ")
+if username == correct_username:
+    password = input("Enter your password: ")
+    if password == correct_password:
+        print("Login Successful")
+    else:
+        print("Incorrect password")
+else:
+    print("Incorrect username")
+
+
+# 4.2 Largest of Three Numbers
+first = float(input("4.2 Enter the first number: "))
+second = float(input("Enter the second number: "))
+third = float(input("Enter the third number: "))
+if first >= second:
+    if first >= third:
+        largest = first
+    else:
+        largest = third
+else:
+    if second >= third:
+        largest = second
+    else:
+        largest = third
+print("Largest number:", largest)
+
+
+# 5. Conditional Expression
+
+# 5.1 Maximum of Two Numbers
+first = float(input("5.1 Enter the first number: "))
+second = float(input("Enter the second number: "))
+maximum = first if first >= second else second
+print("Largest number:", maximum)
+
+
+# 5.2 Age Category
+age = int(input("5.2 Enter your age: "))
+category = "Adult" if age >= 18 else "Minor"
+print(category)
